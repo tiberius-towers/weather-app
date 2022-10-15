@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/73c51a575c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <container>
+        <div id="search">
+        <button id="current-city-button" href="#">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+        <form id ="cityInput">
+          <input type="text" class="enterCityField" placeholder="Enter your city" />
+          <button type="submit">
+            <i class="fa-solid fa-check-double"></i>
+          </button>
+        </form>
+        </div>
+
+        <p>
+          <div class="current-weather">
+          <i class="fa-solid fa-cloud-showers-heavy"></i> <span id="current-temp"></span><a id="celcius" href="#">°C</a> <a id="farenheit" href="#">(°F)</a>
+          <h1></h1>
+          </div>
+        </p>
+        
+
+        <div class="row additional-info">
+          <div class="col-6 date-and-time">
+            <h3><span id="timenow">7:16</span>
+            <br />
+            <span id="datenow">Mon, August 8</span>
+            </h3>
+          </div>
+          <div class="col-6 wind-and-prec">
+            <h3>Precipitation: 85%
+            <br />
+            Wind: 6 km/h </h3>
+          </div>
+          <hr />
+        </div>
+          
+          <div class="row day-temp-prognosis">
+            <div class="col">
+              Now <br />
+              15°C <br />
+              <i class="fa-solid fa-cloud-showers-heavy prognosis"></i>
+            </div>
+            <div class="col">
+              Tue
+              <br />
+              22°C
+              <br /><i class="fa-solid fa-cloud-sun prognosis"></i>
+            </div>
+            <div class="col">
+              Wed
+              <br />23°C <br /><i class="fa-solid fa-cloud-sun prognosis"></i>
+            </div>
+            <div class="col">
+              Thu
+              <br />24°C <br /><i class="fa-solid fa-cloud-sun prognosis"></i>
+            </div>
+            <div class="col">
+              Fri
+              <br />25°C <br /><i class="fa-solid fa-cloud-rain prognosis"></i>
+            </div>
+            <div class="col">
+              Sat
+              <br />27°C <br /><i class="fa-solid fa-cloud-rain prognosis"></i>
+            </div>
+            <div class="col">
+              Sun
+              <br />27°C <br /><i class="fa-solid fa-cloud-rain prognosis"></i>
+            </div>
+          </div>
+        </div>
+      </container>
+    </div>
+
+    <script src="src/index.js">
+    </script>
+  </body>
+</html>

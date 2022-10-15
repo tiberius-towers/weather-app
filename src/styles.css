@@ -1,0 +1,121 @@
+body {
+  font-family: "Oswald", sans-serif;
+  color: rgb(130, 130, 130);
+  font-weight: 200;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 500;
+  color: rgb(106, 105, 105);
+}
+h3 {
+  color: rgb(164, 163, 163);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+button {
+  background-color: rgb(224, 175, 146);
+  border-color: transparent;
+  border-radius: 10em;
+}
+.container {
+  background-size: 100%;
+  width: 38%;
+  padding: 15px 18px;
+  border-style: solid;
+  margin: 20px auto;
+  border-color: rgb(224, 175, 146);
+}
+
+#search {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+}
+#current-city-button {
+  color: rgb(233, 233, 233);
+  border-radius: 1em;
+}
+#cityInput {
+  display: inline;
+}
+
+.enterCityField {
+  border-radius: 10px;
+  border-color: rgb(155, 135, 124);
+  font-size: 18px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 3px 7px;
+  width: 250px;
+}
+#farenheit {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(164, 163, 163);
+  font-weight: 500;
+}
+
+#farenheit:hover {
+  font-size: 20px;
+  color: rgb(224, 175, 146);
+  font-weight: 500;
+}
+
+#celcius {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(224, 175, 146);
+  font-weight: 500;
+}
+#celcius:hover {
+  font-size: 30px;
+  color: rgb(164, 163, 163);
+  font-weight: 500;
+}
+
+.current-weather {
+  font-size: 30px;
+  position: relative;
+  top: 90px;
+  left: -10px;
+  margin-bottom: 250px;
+  color: rgb(224, 175, 146);
+  font-weight: 500;
+  text-align: center;
+}
+.date-and-time {
+  text-align: left;
+}
+.wind-and-prec {
+  text-align: right;
+}
+
+.fa-solid.fa-check-double {
+  color: rgb(233, 233, 233);
+}
+.fa-solid.fa-cloud-showers-heavy.prognosis,
+.fa-solid.fa-cloud-sun.prognosis,
+.fa-solid.fa-cloud-rain.prognosis {
+  color: rgb(224, 175, 146);
+}
+
+.additional-info {
+  position: relative;
+  left: 4%;
+  right: 4%;
+  width: 98%;
+  color: rgb(131, 103, 87);
+}
+.day-temp-prognosis {
+  width: 98%;
+  position: relative;
+  margin-bottom: 20px;
+  left: 3%;
+  right: 3%;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(106, 105, 105);
+}
